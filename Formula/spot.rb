@@ -5,21 +5,21 @@
 class Spot < Formula
   desc "Spot — CLI for restaurant reservation searches and bookings."
   homepage "https://github.com/spot-nyc/spot"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/spot-nyc/spot/releases/download/v0.1.0/spot_0.1.0_darwin_amd64.tar.gz"
-      sha256 "d4e893fa09d25d7443ea04aae602dd0c3a9f38507f091aca207a371c07f4232e"
+      url "https://github.com/spot-nyc/spot/releases/download/v0.2.0/spot_0.2.0_darwin_amd64.tar.gz"
+      sha256 "d096ed7f4c935a4c67c6e5d8fe1b31273d98b3c5ae21957c26569ee52f9bd653"
 
       define_method(:install) do
         bin.install "spot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/spot-nyc/spot/releases/download/v0.1.0/spot_0.1.0_darwin_arm64.tar.gz"
-      sha256 "3d6dc86d5c5cd85fbd142813d0d457292dda601e0407cdbe82677ed379ef6200"
+      url "https://github.com/spot-nyc/spot/releases/download/v0.2.0/spot_0.2.0_darwin_arm64.tar.gz"
+      sha256 "e6f7f267ed795e037f0d658ff33354ff3e5d4f523a2e0c1d6bbb281c1d192b81"
 
       define_method(:install) do
         bin.install "spot"
@@ -29,15 +29,15 @@ class Spot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/spot-nyc/spot/releases/download/v0.1.0/spot_0.1.0_linux_amd64.tar.gz"
-      sha256 "b4410b9412c5b038f5afd986a917b2a745233239272ca13d3e66580efa020194"
+      url "https://github.com/spot-nyc/spot/releases/download/v0.2.0/spot_0.2.0_linux_amd64.tar.gz"
+      sha256 "6eeefcaa061ad261348ea879ccc591f76b9d9773569f08e1cf6d8f60f6e429de"
       define_method(:install) do
         bin.install "spot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/spot-nyc/spot/releases/download/v0.1.0/spot_0.1.0_linux_arm64.tar.gz"
-      sha256 "080431845673b073ae193b7b07c022136619623521eaa05b908ee9c0aee9b4e2"
+      url "https://github.com/spot-nyc/spot/releases/download/v0.2.0/spot_0.2.0_linux_arm64.tar.gz"
+      sha256 "36a9696a6266ac20a7dec79bb553f55a82468a24f8ae06f761bd53dab46b8bbb"
       define_method(:install) do
         bin.install "spot"
       end
